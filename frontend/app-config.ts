@@ -25,48 +25,32 @@ export interface AppConfig {
   audioVisualizerRadialRadius?: number;
   audioVisualizerWaveLineWidth?: number;
 
-  // agent dispatch configuration
   agentName?: string;
-
-  // LiveKit Cloud Sandbox configuration
   sandboxId?: string;
 }
 
 export const APP_CONFIG_DEFAULTS: AppConfig = {
-  companyName: 'Murf AI',
-  pageTitle: 'Voice Agent Starter',
-  pageDescription: 'A voice agent powered by Murf Falcon — the fastest TTS API',
+  companyName: 'हिंदी सीखो | Learn Hindi',
+  pageTitle: 'Hindi-English Learning Tutor',
+  pageDescription: 'बच्चों के लिए मजेदार हिंदी सीखने का अनुभव | Fun Hindi learning for children',
 
-  supportsChatInput: true,
-  supportsVideoInput: true,
-  supportsScreenShare: true,
+  supportsChatInput: false,
+  supportsVideoInput: false,
+  supportsScreenShare: false,
   isPreConnectBufferEnabled: true,
 
   logo: '/murf-logo.svg',
-  accent: '#6366F1',
+  accent: '#F59E0B',
   logoDark: '/murf-logo-dark.svg',
-  accentDark: '#818cf8',
-  startButtonText: 'Start talking',
+  accentDark: '#FBBF24',
+  startButtonText: 'शुरू करो | Start',
 
-  // optional: audio visualization configuration
-  // audioVisualizerType: 'bar',
-  // audioVisualizerColor: '#002cf2',
-  // audioVisualizerColorDark: '#1fd5f9',
-  // audioVisualizerColorShift: 0.3,
-  // audioVisualizerBarCount: 5,
-  // audioVisualizerType: 'radial',
-  // audioVisualizerRadialBarCount: 24,
-  // audioVisualizerRadialRadius: 100,
-  // audioVisualizerType: 'grid',
-  // audioVisualizerGridRowCount: 25,
-  // audioVisualizerGridColumnCount: 25,
-  // audioVisualizerType: 'wave',
-  // audioVisualizerWaveLineWidth: 3,
-  // audioVisualizerType: 'aura',
+  audioVisualizerType: 'bar',
+  audioVisualizerColor: '#F59E0B',
+  audioVisualizerColorDark: '#FBBF24',
+  audioVisualizerColorShift: 0.2,
+  audioVisualizerBarCount: 7,
 
-  // agent dispatch configuration
   agentName: process.env.AGENT_NAME ?? undefined,
-
-  // LiveKit Cloud Sandbox configuration
   sandboxId: undefined,
 };
